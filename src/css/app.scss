@@ -1,0 +1,200 @@
+/* -----------------------------------------
+            Poppins Font
+-------------------------------------------- */
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/poppins-v21-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 400;
+  src: url("./fonts/poppins-v21-latin-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/poppins-v21-latin-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 500;
+  src: url("./fonts/poppins-v21-latin-500italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./fonts/poppins-v21-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 600;
+  src: url("./fonts/poppins-v21-latin-600italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/poppins-v21-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 700;
+  src: url("./fonts/poppins-v21-latin-700italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./fonts/poppins-v21-latin-800.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 800;
+  src: url("./fonts/poppins-v21-latin-800italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./fonts/poppins-v21-latin-900.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 900;
+  src: url("./fonts/poppins-v21-latin-900italic.woff2") format("woff2");
+}
+
+/* -----------------------------------------
+            Style
+-------------------------------------------- */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0px;
+}
+
+.card-carousel .swiper-3d .swiper-slide,
+.card-carousel .swiper-3d .swiper-cube-shadow {
+  transform-style: unset !important;
+}
+
+.card-carousel .swiper-slide-prev {
+  transform: translate3d(180px, 0px, -99.8347px) rotateX(0deg) rotateY(0deg)
+    scale(0.95) !important;
+}
+
+.card-carousel .swiper-slide-next {
+  transform: translate3d(-180px, 0px, -100.165px) rotateX(0deg) rotateY(0deg)
+    scale(0.95) !important;
+}
+
+.card-carousel .swiper-button-prev:after,
+.card-carousel .swiper-button-next:after {
+  font-size: 24px !important;
+  color: #fff;
+}
+
+.card-carousel .swiper-button-prev {
+  left: 0px !important;
+}
+
+.card-carousel .swiper-button-next {
+  right: 0px !important;
+}
+
+.feature-carousel {
+  margin-top: 60px;
+  padding-left: 78px !important;
+}
+
+.feature-carousel .swiper-slide {
+  width: 22vw !important;
+}
+
+.feature-carousel .item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.feature-carousel .item .icon-wrapper {
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+}
+
+.feature-carousel .item p {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 900;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0px 16px;
+  }
+
+  .card-carousel .swiper-slide-prev {
+    transform: translate3d(140px, 0px, -99.8347px) rotateX(0deg) rotateY(0deg)
+      scale(0.95) !important;
+  }
+
+  .card-carousel .swiper-slide-next {
+    transform: translate3d(-140px, 0px, -100.165px) rotateX(0deg) rotateY(0deg)
+      scale(0.95) !important;
+  }
+
+  .feature-carousel {
+    display: none !important;
+  }
+}
